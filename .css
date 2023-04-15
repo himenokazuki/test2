@@ -27,7 +27,8 @@ main {
   margin-right: 0;
 }
 
-.step-img1 {
+
+.step-img1{
   height: 150px;
   background-image: url(img/flow01.png);
   background-position: bottom;
@@ -66,11 +67,21 @@ footer {
 }
 
 /* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
-@media screen and (max-width: 768px) {main {
+@media screen and (max-width: 768px) {
+  main {
   width:100%;
   margin: 50px auto;
-  display: flex;
-  flex-flow:column;
-  justify-content:space-between;
-}
+  display: block;
+  }
+.step-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+.step-box:last-child {
+    margin-bottom: 0;
+    width: 90%;
+    margin:0 auto;
+  }
 }
